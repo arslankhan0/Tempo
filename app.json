@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Tempo",
+    "slug": "tempo-task-timer",
+    "version": "1.0.0",
+    "scheme": "tempo",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.personal.tempotimer"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "Tempo — make time for what matters"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      "expo-audio",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

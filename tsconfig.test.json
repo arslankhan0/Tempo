@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "rootDir": ".",
+    "outDir": ".test-build",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["tests/**/*.ts", "lib/time.ts", "lib/timer.ts", "lib/tasks.ts", "lib/task-actions.ts", "lib/analytics.ts", "lib/manual-session.ts", "lib/backup.ts", "types/task.ts"]
+}
