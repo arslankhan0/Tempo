@@ -60,6 +60,8 @@
 
 Tempo stores timestamps instead of incrementing a counter every second. The visible clock is calculated from the saved start time, previously accumulated time, and the current time. This keeps a session accurate when the app is backgrounded and lets an active timer resume after a restart. Only one task can run at a time.
 
+Focus music uses Expo Audio background playback on Android and iOS. Android displays media playback as a foreground service while music is playing, allowing playback to continue when the screen is locked or another app is open.
+
 ## Tech stack
 
 | Area | Technology |
@@ -140,4 +142,4 @@ Tempo has no backend, accounts, analytics service, or cloud database. App data a
 
 ## License
 
-This project is intended as a practical Expo and React Native learning project. Add a license before redistributing it.
+Tempo is available under the [MIT License](LICENSE). Third-party packages remain subject to their respective licenses.

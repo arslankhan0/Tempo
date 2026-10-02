@@ -30,7 +30,7 @@ export function MusicPlayerProvider({ children }: PropsWithChildren) {
   useEffect(() => {
     void setAudioModeAsync({
       playsInSilentMode: true,
-      shouldPlayInBackground: false,
+      shouldPlayInBackground: true,
       interruptionMode: 'doNotMix',
     });
   }, []);

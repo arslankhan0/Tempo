@@ -1,5 +1,5 @@
 import { Feather } from '@expo/vector-icons';
-import { router } from 'expo-router';
+import { type Href, router } from 'expo-router';
 import { useState } from 'react';
 import { Modal, Pressable, ScrollView, Text, View } from 'react-native';
 
@@ -143,6 +143,24 @@ export default function SettingsScreen() {
             </Pressable>
             {message ? <Text accessibilityRole="alert" className="text-center text-sm text-[#526276] dark:text-[#8B9CAF]">{message}</Text> : null}
           </View>
+        </View>
+
+        <View>
+          <Text className="mb-3 text-xs font-semibold uppercase tracking-[2px] text-[#738294] dark:text-[#60758C]">About</Text>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/licenses' as Href)}
+            className="min-h-16 flex-row items-center rounded-2xl border border-[#DDE4EA] bg-white px-4 dark:border-[#1B2D42] dark:bg-[#0D1724]"
+          >
+            <View className="mr-3 h-10 w-10 items-center justify-center rounded-xl bg-[#E8F0FF] dark:bg-[#142B51]">
+              <Feather accessible={false} aria-hidden name="file-text" size={18} color="#2F7BFF" />
+            </View>
+            <View className="flex-1">
+              <Text className="font-semibold text-[#102033] dark:text-white">Open-source licenses</Text>
+              <Text className="mt-1 text-xs text-[#738294] dark:text-[#8B9CAF]">MIT License</Text>
+            </View>
+            <Feather accessible={false} aria-hidden name="chevron-right" size={19} color={isDark ? '#60758C' : '#738294'} />
+          </Pressable>
         </View>
       </View>
 
